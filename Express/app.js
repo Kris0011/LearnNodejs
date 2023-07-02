@@ -3,6 +3,10 @@ const express = require("express")
 const app = express();
 const port = 3000 ;
 
+app.use('/static',express.static('static'))  // To use static files 
+
+app.set('view engine','pug');  // template engine as pug
+
 app.get("/",(req,res)=>{
     res.send("This is Home");
 });
