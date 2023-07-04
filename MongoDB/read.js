@@ -19,3 +19,8 @@ db.students.find( {$or: [ { department: "CE" }, { age : {$lt : 20}} ]})   // atl
 db.students.findOne( {$or: [ { department: "CE" }, { age : {$lt : 20}} ]}) 
 
 
+
+
+
+
+
