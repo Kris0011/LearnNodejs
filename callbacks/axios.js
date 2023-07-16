@@ -11,5 +11,5 @@ const connectToUrl = (url) => {
 
     .catch(err =>{
         console.log("Rejected")
-    })
+    })  
 }
