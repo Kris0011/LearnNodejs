@@ -1,10 +1,13 @@
+const dotenv = require("dotenv")
 const express = require("express")
 const mongoose = require("mongoose")
 
 const app = express();
 const port = 3000 ;
 
-const DB = "mongodb://localhost:27017/movies"
+dotenv.config({path: './config.env'});
+
+const DB = process.env.CONN ;
 
 mongoose.connect(DB).then( ()=> {
     console.log('connection successful')
